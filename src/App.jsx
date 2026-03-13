@@ -22,22 +22,22 @@ function App() {
       
       {/* Premium Aurora Background */}
       <div className="fixed inset-0 -z-30 pointer-events-none overflow-hidden">
-          {/* Base Atmospheric Glow */}
-          <div className="absolute top-[-20%] left-[-20%] w-[80vw] h-[80vw] bg-primary-900/20 rounded-full blur-[120px] mix-blend-screen animate-pulse-slow"></div>
-          <div className="absolute bottom-[-20%] right-[-20%] w-[80vw] h-[80vw] bg-blue-900/20 rounded-full blur-[120px] mix-blend-screen animate-pulse-slow" style={{ animationDelay: '3s' }}></div>
+          {/* Base Atmospheric Glow - Optimized */}
+          <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-primary-900/10 rounded-full blur-[80px] mix-blend-screen opacity-50"></div>
+          <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-blue-900/10 rounded-full blur-[80px] mix-blend-screen opacity-50"></div>
           
-          {/* Moving Aurora Borealis Effect */}
+          {/* Moving Aurora Borealis Effect - Optimized */}
           <div 
-            className="absolute -inset-[100%] w-[300%] h-[300%] opacity-30 blur-[100px] animate-aurora"
+            className="absolute -inset-[50%] w-[200%] h-[200%] opacity-20 blur-[60px] animate-aurora will-change-transform"
             style={{
-                background: 'radial-gradient(circle at 50% 50%, rgba(74, 222, 128, 0.1), transparent 50%), radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.15), transparent 50%), radial-gradient(circle at 100% 0%, rgba(168, 85, 247, 0.15), transparent 50%), radial-gradient(circle at 100% 100%, rgba(74, 222, 128, 0.1), transparent 50%), radial-gradient(circle at 0% 100%, rgba(59, 130, 246, 0.15), transparent 50%)',
-                backgroundSize: '150% 150%'
+                background: 'radial-gradient(circle at 50% 50%, rgba(74, 222, 128, 0.1), transparent 50%), radial-gradient(circle at 100% 0%, rgba(59, 130, 246, 0.1), transparent 50%)',
+                backgroundSize: '100% 100%'
             }}
           ></div>
 
-          {/* Additional Color Accents */}
-          <div className="absolute top-1/3 right-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '8s' }}></div>
-          <div className="absolute bottom-1/3 left-0 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '10s' }}></div>
+          {/* Additional Color Accents - Static for Performance */}
+          <div className="absolute top-1/3 right-0 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[80px]"></div>
+          <div className="absolute bottom-1/3 left-0 w-[300px] h-[300px] bg-teal-500/5 rounded-full blur-[80px]"></div>
       </div>
 
       <Hero />
