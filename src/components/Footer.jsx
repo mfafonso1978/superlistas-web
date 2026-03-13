@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Heart } from 'lucide-react';
 
 const Footer = () => {
@@ -37,17 +37,30 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-6">Empresa</h4>
             <ul className="space-y-4">
-              {['Sobre nós', 'Carreiras', 'Blog', 'Contato'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">{item}</a>
-                </li>
-              ))}
+              <li>
+                <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">Sobre nós</a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">Carreiras</a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">Blog</a>
+              </li>
+              <li>
+                <a href="mailto:superlistas.app@gmail.com" className="text-gray-400 hover:text-primary-400 transition-colors">Contato</a>
+              </li>
             </ul>
           </div>
         </div>
         
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>&copy; 2024 Superlistas. Todos os direitos reservados.</p>
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <p>&copy; 2026 Superlistas. Todos os direitos reservados.</p>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              <Link to="/politica-privacidade" className="hover:text-primary-400 transition-colors text-center">Política de Privacidade</Link>
+              <Link to="/termos-uso" className="hover:text-primary-400 transition-colors text-center">Termos de Uso</Link>
+            </div>
+          </div>
           <div className="flex items-center mt-4 md:mt-0">
             <span>Feito com</span>
             <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" />
