@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="font-sans antialiased text-white bg-black min-h-screen selection:bg-primary-500 selection:text-white relative overflow-x-hidden">
       {/* Global Background Elements */}
-      <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-950 -z-50"></div>
+      <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black -z-50"></div>
+      <div className="fixed inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 -z-40"></div>
 
       {/* Supermarket Aisle Background Image */}
       <div 
