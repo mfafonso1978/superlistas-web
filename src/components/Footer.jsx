@@ -26,11 +26,18 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-6">Produto</h4>
             <ul className="space-y-4">
-              {['Recursos', 'Premium', 'Depoimentos', 'FAQ'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">{item}</a>
-                </li>
-              ))}
+              <li>
+                <Link to="/recursos" className="text-gray-400 hover:text-primary-400 transition-colors">Recursos</Link>
+              </li>
+              <li>
+                <Link to="/premium" className="text-gray-400 hover:text-primary-400 transition-colors">Premium</Link>
+              </li>
+              <li>
+                <Link to="/depoimentos" className="text-gray-400 hover:text-primary-400 transition-colors">Depoimentos</Link>
+              </li>
+              <li>
+                <Link to="/faq" className="text-gray-400 hover:text-primary-400 transition-colors">FAQ</Link>
+              </li>
             </ul>
           </div>
 
@@ -38,13 +45,13 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-6">Empresa</h4>
             <ul className="space-y-4">
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">Sobre nós</a>
+                <Link to="/sobre" className="text-gray-400 hover:text-primary-400 transition-colors">Sobre nós</Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">Carreiras</a>
+                <Link to="/carreiras" className="text-gray-400 hover:text-primary-400 transition-colors">Carreiras</Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">Blog</a>
+                <Link to="/blog" className="text-gray-400 hover:text-primary-400 transition-colors">Blog</Link>
               </li>
               <li>
                 <a href="mailto:superlistas.app@gmail.com" className="text-gray-400 hover:text-primary-400 transition-colors">Contato</a>

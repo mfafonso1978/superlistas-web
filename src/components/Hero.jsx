@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Download, ChevronRight, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -38,13 +39,15 @@ const Hero = () => {
                   Baixar Agora
                 </motion.button>
                 
-                <motion.button 
-                  whileHover={{ x: 5 }}
-                  className="px-8 py-4 rounded-2xl bg-white/5 hover:bg-white/10 text-white font-semibold text-lg backdrop-blur-md border border-white/10 transition-all flex items-center group w-full sm:w-auto justify-center"
-                >
-                  Ver recursos
-                  <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </motion.button>
+                <motion.div whileHover={{ x: 5 }} className="w-full sm:w-auto">
+                  <Link
+                    to="/recursos"
+                    className="px-8 py-4 rounded-2xl bg-white/5 hover:bg-white/10 text-white font-semibold text-lg backdrop-blur-md border border-white/10 transition-all flex items-center group justify-center"
+                  >
+                    Ver recursos
+                    <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </motion.div>
               </div>
 
               <div className="mt-12 flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-500 font-medium">

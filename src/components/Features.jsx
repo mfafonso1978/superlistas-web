@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import { ShoppingCart, BarChart2, Layers, TrendingDown, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const features = [
   {
     title: 'Comparativo de Preços',
+    slug: 'comparativo-precos',
     description: 'Nossa IA analisa itens e indica onde comprar para economizar até 30%.',
     icon: ShoppingCart,
     image: 'image_f33b17.jpg',
@@ -13,6 +15,7 @@ const features = [
   },
   {
     title: 'Análise Financeira',
+    slug: 'analise-financeira',
     description: 'Gráficos detalhados e categorias automáticas.',
     icon: BarChart2,
     image: 'image_f34221.jpg',
@@ -22,6 +25,7 @@ const features = [
   },
   {
     title: 'Organização Inteligente',
+    slug: 'organizacao-inteligente',
     description: 'Itens ordenados pela disposição da loja.',
     icon: Layers,
     image: 'image_f33ae0.jpg',
@@ -31,6 +35,7 @@ const features = [
   },
   {
     title: 'Previsão de Gastos',
+    slug: 'previsao-gastos',
     description: 'Saiba quanto vai pagar antes do caixa.',
     icon: TrendingDown,
     image: 'image_f34261.jpg',
@@ -81,9 +86,9 @@ const Features = () => {
                     </div>
 
                     <div className="pt-2">
-                         <span className="text-primary-400 font-medium flex items-center group-hover:translate-x-1 transition-transform cursor-pointer">
+                      <Link to={`/recursos#${feature.slug}`} className="text-primary-400 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                            Saiba mais <ArrowRight className="w-4 h-4 ml-2" />
-                         </span>
+                      </Link>
                     </div>
                 </div>
                 

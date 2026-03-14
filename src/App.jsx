@@ -4,6 +4,13 @@ import Footer from "./components/Footer";
 import LandingPage from "./pages/LandingPage";
 import PrivacyPolicyPage from "./pages/legal/PrivacyPolicyPage";
 import TermsOfUsePage from "./pages/legal/TermsOfUsePage";
+import ResourcesPage from "./pages/product/ResourcesPage";
+import PremiumPage from "./pages/product/PremiumPage";
+import TestimonialsPage from "./pages/product/TestimonialsPage";
+import FaqPage from "./pages/product/FaqPage";
+import AboutPage from "./pages/company/AboutPage";
+import CareersPage from "./pages/company/CareersPage";
+import BlogPage from "./pages/company/BlogPage";
 
 function App() {
   return (
@@ -46,6 +53,13 @@ function App() {
 
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/recursos" element={<ResourcesPage />} />
+          <Route path="/premium" element={<PremiumPage />} />
+          <Route path="/depoimentos" element={<TestimonialsPage />} />
+          <Route path="/faq" element={<FaqPage />} />
+          <Route path="/sobre" element={<AboutPage />} />
+          <Route path="/carreiras" element={<CareersPage />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="/politica-privacidade" element={<PrivacyPolicyPage />} />
           <Route path="/termos-uso" element={<TermsOfUsePage />} />
         </Routes>
