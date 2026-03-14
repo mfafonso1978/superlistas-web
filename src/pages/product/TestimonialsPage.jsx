@@ -29,7 +29,10 @@ const TestimonialsPage = () => {
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {testimonials.map((item) => (
-          <article key={item.name} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <article
+            key={item.name}
+            className="rounded-2xl border border-white/10 bg-white/5 p-6"
+          >
             <p className="leading-relaxed mb-4">{item.text}</p>
             <p className="text-primary-400 font-semibold">{item.name}</p>
           </article>

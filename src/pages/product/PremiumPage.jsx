@@ -13,7 +13,9 @@ const PremiumPage = () => {
       subtitle="Para quem quer controle total das compras com automacao, seguranca e desempenho avancado."
     >
       <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">O que voce desbloqueia</h2>
+        <h2 className="text-2xl font-semibold text-white mb-3">
+          O que voce desbloqueia
+        </h2>
         <ul className="list-disc pl-5 space-y-2 marker:text-primary-500">
           <li>Backup em nuvem com sincronizacao em tempo real.</li>
           <li>Relatorios avancados por periodo, loja e categoria.</li>
@@ -23,10 +25,13 @@ const PremiumPage = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold text-white mb-3">Para quem e ideal</h2>
+        <h2 className="text-2xl font-semibold text-white mb-3">
+          Para quem e ideal
+        </h2>
         <p>
-          Familias, casais e usuarios que fazem compras frequentes e querem previsibilidade de gastos, historico
-          detalhado e produtividade no dia a dia.
+          Familias, casais e usuarios que fazem compras frequentes e querem
+          previsibilidade de gastos, historico detalhado e produtividade no dia
+          a dia.
         </p>
       </section>
     </StaticPageLayout>
